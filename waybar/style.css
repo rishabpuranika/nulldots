@@ -1,0 +1,148 @@
+/* Import pywal colors */
+@import "/home/rish/.cache/wal/colors-waybar.css";
+
+/* Base styles */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Radio Canada", sans-serif;
+    font-size: 14px;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main window bar - fully transparent background */
+#waybar {
+    background: transparent;
+    color: @foreground;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Left-side modules */
+#custom-waybarthemes,
+#custom-filemanager,
+#custom-spotify,
+#custom-chatgpt,
+#custom-claude,
+#custom-whatsapp,
+#custom-terminal {
+    padding: 0 10px;
+    margin: 3px 4px;
+    background: alpha(@color1, 0.85);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#custom-waybarthemes:hover,
+#custom-filemanager:hover,
+#custom-spotify:hover,
+#custom-chatgpt:hover,
+#custom-claude:hover,
+#custom-whatsapp:hover,
+#custom-terminal:hover {
+    background: alpha(@color1, 1);
+}
+/* Workspaces */
+#workspaces button {
+    padding: 0 8px;
+    margin: 3px 2px;
+    background: transparent;
+    color: @foreground;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+    background: alpha(@color4, 0.4);
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#workspaces button.active {
+    background: @color4;
+    color: @background;
+}
+
+#workspaces button.urgent {
+    background: @color9;
+}
+
+/* Right-side modules */
+#pulseaudio,
+#bluetooth,
+#battery,
+#network,
+#tray, 
+#clock,
+#custom-log,
+#custom-power {
+    padding: 0 10px;
+    margin: 3px 4px;
+    background: alpha(@color1, 0.85);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#clock{
+    font-family: "Font Awesome 6 Free"; /* Ensure Font Awesome is installed */
+    font-size: 14px;
+    font-weight: 900;
+}
+
+/* Battery states */
+#battery.warning {
+    background: alpha(@color3, 0.85);
+}
+
+#battery.critical {
+    background: alpha(@color1, 0.85);
+    color: @color9;
+    animation: blink 1s infinite;
+}
+
+/* Custom modules */
+#custom-log {
+    background: alpha(@color3, 0.85);
+}
+
+#custom-power {
+    background: alpha(@color3, 0.85);
+}
+
+/* Media player */
+#mpd {
+    background: alpha(@color1, 0.85);
+}
+
+#mpd.disconnected {
+    background: @color9;
+}
+
+#mpd.stopped {
+    background: @color8;
+}
+
+#mpd.playing {
+    background: @color2;
+}
+
+/* Animation keyframes */
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+/* Tooltip */
+tooltip {
+    background: @background;
+    border: 1px solid @color4;
+}
+
+tooltip label {
+    color: @foreground;
+}

@@ -1,0 +1,21 @@
+@import url("/home/rish/.cache/wal/colors-waybar.css");
+* {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.notification {
+    background-color: @color0;
+    border-radius: 10px;
+    border: 1px solid #ff5555;
+    padding: 10px;
+}
+
+.notification.critical {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.notification.low {
+    opacity: 0.7;
+}

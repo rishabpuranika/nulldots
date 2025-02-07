@@ -1,0 +1,166 @@
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.control-center {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    background-image: linear-gradient(-45deg, #A8C4D9, #9B7AD4, #BD90CF);
+    background-size: 200% 200%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: gradientAnimation 3s ease infinite;
+    padding: 6px;
+}
+
+.control-center-list {
+    background: transparent;
+}
+
+.control-center-list-placeholder {
+    opacity: 0.7;
+}
+
+/* Window behind control center */
+.blank-window {
+    background: transparent;
+}
+
+/*** Widgets ***/
+
+/* Title widget */
+.widget-title {
+    margin: 8px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.widget-title > button {
+    font-size: initial;
+    color: #ffffff;
+    text-shadow: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    border-radius: 12px;
+    transition: background 0.3s ease-in-out;
+}
+.widget-title > button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Label widget */
+.widget-label {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 12px;
+    border-radius: 12px;
+    color: #ffffff;
+}
+
+/* DND widget */
+.widget-dnd {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.widget-dnd > switch {
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: background 0.3s ease-in-out;
+}
+.widget-dnd > switch:checked {
+    background: #9B7AD4;
+}
+.widget-dnd > switch slider {
+    background: #A8C4D9;
+    border-radius: 12px;
+}
+
+/* Mpris widget */
+.widget-mpris {
+    font-family: "JetBrains Mono Nerd Font";
+}
+.widget-mpris-player {
+    padding: 14px;
+    margin: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+.widget-mpris-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Buttons widget */
+.widget-buttons-grid {
+    font-size: 14px;
+    font-family: "JetBrains Mono Nerd Font";
+    border-radius: 16px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    padding: 10px;
+    background: #9B7AD4;
+    color: #ffffff;
+    border-radius: 12px;
+    transition: background 0.3s ease-in-out;
+}
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+    background: #BD90CF;
+}
+
+/* Volume widget */
+trough {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+trough highlight {
+    background: #9B7AD4;
+    border-radius: 12px;
+}
+
+/* Notification styling */
+.notification-row {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 8px;
+    transition: background 0.3s ease-in-out;
+}
+.notification-row:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.notification-row .notification-background {
+    padding: 6px 12px;
+}
+.notification-row .notification-background .close-button {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+}
+.notification-row .notification-background .close-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Inline reply box */
+.notification-row .notification-background .notification .inline-reply .inline-reply-entry {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 12px;
+}
+.notification-row .notification-background .notification .inline-reply .inline-reply-button {
+    background: #9B7AD4;
+    border-radius: 12px;
+    transition: background 0.3s ease-in-out;
+}
+.notification-row .notification-background .notification .inline-reply .inline-reply-button:hover {
+    background: #BD90CF;
+}
+
