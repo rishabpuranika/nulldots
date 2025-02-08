@@ -1,0 +1,53 @@
+@import "/home/rish/.cache/wal/colors-waybar.css";
+
+* {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+window {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    border: none;
+    color: white;
+    background-color:@color4;
+    border-radius: 10px;
+}
+
+button:focus, button:active {
+    background-color: @color4;
+}
+
+button:hover {
+    background-color: @color1;
+}
+
+#lock {
+    background-image: image(url("/home/rish/.config/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/home/rish/.config/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("/home/rish/.config/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("/home/rish/.config/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("/home/rish/.config/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/home/rish/.config/wlogout/icons/reboot.png"));
+}
+
