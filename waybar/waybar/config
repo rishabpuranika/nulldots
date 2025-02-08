@@ -25,7 +25,7 @@
     "spacing": 0,
 
     // Modules Left
-    "modules-left": ["custom/waybarthemes","custom/filemanager","custom/terminal","custom/spotify","custom/chatgpt","custom/claude","custom/whatsapp","custom/zen"],
+    "modules-left": ["custom/waybarthemes","custom/filemanager","custom/terminal","custom/spotify","custom/chatgpt","custom/claude","custom/whatsapp","custom/rofi"],
 
     // Modules Center
     "modules-center": ["hyprland/workspaces"],
@@ -76,10 +76,10 @@
     "on-click": "~/.config/ml4w/settings/claude.sh",
     "tooltip-format": "Claude",
   },
- "custom/zen": {
-    "format": "Z ",
-    "on-click": "zen &",
-    "tooltip-format": "Zen"
+ "custom/rofi": {
+    "format": "R ",
+    "on-click": "rofi -show drun &",
+    "tooltip-format": "Rofi"
 },
   "custom/whatsapp":{
   "format":" ",

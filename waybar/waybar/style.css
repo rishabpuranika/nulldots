@@ -31,7 +31,7 @@ window#waybar.hidden {
 #custom-whatsapp,
 #custom-cpu,
 #custom-disk,
-#custom-zen,
+#custom-rofi,
 #custom-terminal {
     padding: 0 10px;
     margin: 3px 4px;
@@ -48,7 +48,7 @@ window#waybar.hidden {
 #custom-whatsapp:hover,
 #custom-cpu:hover,
 #custom-disk:hover,
-#custom-zen:hover,
+#custom-rofi:hover,
 #custom-terminal:hover {
     background: alpha(@color1, 1);
 }
